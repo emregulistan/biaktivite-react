@@ -49,14 +49,14 @@ export default observer(function ActivityForm() {
     return (
         <Segment clearing>
             <Form onSubmit={handleSubmit} autoComplete='off'>
-                <Form.Input placeholder='Title' value={activity.title} name='title' onChange={handleInputChange} />
-                <Form.TextArea placeholder='Description' value={activity.description} name='description' onChange={handleInputChange} />
-                <Form.Input placeholder='Category' value={activity.category} name='category' onChange={handleInputChange} />
-                <Form.Input type='date' placeholder='Date' value={activity.date} name='date' onChange={handleInputChange} />
-                <Form.Input placeholder='City' value={activity.city} name='city' onChange={handleInputChange}/>
-                <Form.Input placeholder='Venue' value={activity.venue} name='venue' onChange={handleInputChange}/>
-                <Button loading={loading} floated='right' positive type='submit' content='Submit' />
-                <Button as={Link} to='/activities' floated='right' type='button' content='Cancel' />
+                <Form.Input placeholder='Baslık' value={activity.title} name='title' onChange={handleInputChange} />
+                <Form.TextArea placeholder='Açıklama' value={activity.description} name='description' onChange={handleInputChange} />
+                <Form.Input placeholder='Kategori' value={activity.category} name='category' onChange={handleInputChange} />
+                <Form.Input type='date' placeholder='Tarih' value={activity.date} name='date' onChange={handleInputChange} />
+                <Form.Input placeholder='Şehir' value={activity.city} name='city' onChange={handleInputChange}/>
+                <Form.Input placeholder='Konum' value={activity.venue} name='venue' onChange={handleInputChange}/>
+                <Button loading={loading} floated='right' positive type='submit' content='Kaydet' />
+                <Button as={Link} to='/activities' floated='right' type='button' content='İptal Et' />
             </Form>
         </Segment>
     )
